@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "Konnect";
+  src: url("/fonts/KonnectRegular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Konnect";
+  src: url("/fonts/KonnectMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/gilroy-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/gilroy-semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-family: "Archivo", sans-serif;
+  --second-family: "Konnect", sans-serif;
+  --third-family: "Gilroy", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 600;
+  padding: 20px 84px 27px;
+  margin: 0;
+  color: #303030;
+  background-color: #f4f6f7;
+  max-width: 1320px;
+  min-height: 100vh;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 231px;
+  margin-bottom: 64px;
+}
+
+.header-button {
+  border: none;
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 108px;
+  width: 132px;
+  height: 44px;
+  background: #efeff2;
+}
+
+.header-img {
+  width: 26px;
+  height: 26px;
+}
+
+.header-name {
+  font-family: var(--third-family);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.95);
+}
+
+.header-nav {
+  border: 1px solid rgba(225, 225, 226, 0.46);
+  border-radius: 100px;
+  height: 44px;
+  background-color: #f3f4f6;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.header-list {
+  display: flex;
+  gap: 4px;
+}
+
+.header-list-item {
+  padding: 11px;
+}
+
+.item {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  color: #aeb0b1;
+}
+
+.header-list-item:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbfbfc;
+  background-color: #303030;
+  border-radius: 100px;
+  height: 38px;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  gap: 138px;
+  margin-bottom: 148px;
+}
+
+.hero-title {
+  font-size: 72px;
+  line-height: 110%;
+  color: #303030;
+  margin-bottom: 16px;
+}
+
+.hero-info {
+  font-family: var(--font3);
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(38, 38, 38, 0.55);
+  margin-bottom: 70px;
+}
+
+.hero-button-wrapper {
+  display: flex;
+  gap: 21px;
+}
+
+.hero-button-join {
+  width: 329px;
+  height: 57px;
+  font-weight: 600;
+  border-radius: 38px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f7f7f7;
+  backdrop-filter: blur(4px);
+  background-color: #2d2d2d;
+}
+
+.hero-button-read {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 38px;
+  font-weight: 600;
+  width: 208px;
+  height: 57px;
+  backdrop-filter: blur(4px);
+  background: #e6e8ec;
+}
+
+.hero-img {
+  width: 212px;
+  height: 212px;
+  padding: 34px 45px;
+}
+
+/* About */
+
+.about-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.1;
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.about-img {
+  width: 179px;
+  height: 179px;
+}
+
+.div1 {
+  display: flex;
+  border-radius: 45px;
+  background-color: #2d322f;
+  width: 340px;
+  height: 57px;
+}
+
+.about-number {
+  border-radius: 100%;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d322f;
+  color: white;
+}
+
+.about-name {
+  font-family: var(--font3);
+  font-weight: 400;
+  font-size: 20px;
+  color: #303030;
+}
